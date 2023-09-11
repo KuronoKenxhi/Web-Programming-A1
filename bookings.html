@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--HEAD-->
+    <title>Bookings</title>
+    <link rel="stylesheet" type = "text/css" href="styles.css">
+</head>
+<body>
+    <!--BODY-->
+    <div id="home"></div>
+<header>
+    <!--HEADER-->
+    <div class="headerLogo">
+        <img src="assets/images/headerLogo.png" alt="header logo" width="50" height="50" class="logoImage">
+    </div>
+    <div class="headerLogo">
+        <h1>Russel Street Medical</h1>
+    </div>
+</header>
+
+    <!--NAVIGATION MENU-->
+    <nav id="navbar">
+        <ul id="nav-menu">
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <!-- MAIN-->
+
+    <!-- BOOKING FORM -->
+    <h2>Appointment Bookings</h2>
+
+    <form class="bookingForm" id="bookingForm" method="post" action="">
+        <!-- PATIENT ID-->
+        <div class="formGroup">
+            <label for="pid">Patient ID:</label>
+            <input type="text" id="pid" name="pid" required><br>
+        </div>
+        
+        <!-- DATE -->
+        <div class="formGroup">
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required><br>
+        </div>
+
+        <!-- PILLGROUP -->
+        <div class="formGroup">
+
+            <label>Time:</label>
+            <div class="pill-group ">
+
+                <label for="leftCheckbox" class="pill">
+                    <input type="checkbox" id="leftCheckbox" name="time[]" required> 9am - 12pm
+                </label>
+
+                <label for="middleCheckbox" class="pill">
+                    <input type="checkbox" id="middleCheckbox" name="time[]" required> 12pm - 3pm
+                </label>
+
+                <label for="rightCheckbox" class="pill">
+                    <input type="checkbox" id="rightCheckbox" name="time[]" required> 3pm - 6pm
+                </label>
+
+            </div>
+
+        </div>        
+
+        <!-- DROPDOWN -->
+        <div class="formGroup">
+            <label for="reason">Appointment Reason:</label>
+            <select id="reason" name="reason" required>
+                <option value="">Please Select</option>
+                <option value="childhoodVaccination">Childhood Vaccination</option>
+                <option value="influenzaShot">Influenza Shot</option>
+                <option value="covidBooster">Covid Booster Shot</option>
+                <option value="bloodTest">Blood Test</option>
+            </select><br>
+        </div>
+        
+        <!-- COMMENT TEXTAREA -->
+        <div class="formGroup">
+            <textarea id="comment" rows="5" cols="40" readonly></textarea><br>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <div class="formGroup">
+            <input type="submit" value="Submit" onclick="checkboxValidation(); patientIDValidation()">
+        </div>
+    </form>
+
+</main>
+<footer>
+    <!--FOOTER-->
+    <div class="contact-info">
+        <hr> <!-- Horizontal Line to Separate Sections-->
+        <p>Contact us: <span class="phone-number">(123) 456-7890</span></p>
+        <p>Email: <span class="email">info@RusselStreetMedical.com.au</span></p>
+    </div>
+    <p>Mitchell Gerald Hughes (s3901335)</p>
+</footer> 
+
+<!-- IMPORT SCRIPT -->
+<script src="assets/scripts/bookingScript.js"></script>
+</body>
+</html>

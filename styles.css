@@ -1,0 +1,308 @@
+/* CSS File */
+/* Author: Mitchell Hughes s3901335 */
+
+/* RESET DEFAULT MARGINS */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+ * HEADER STYLING 
+ */
+header {
+    background-image: linear-gradient(to bottom, #FFD400, #fff2b3);
+    font-family: 'Poppin', sans-serif;
+    text-align: center;
+    color: #333;
+}
+.headerLogo {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+.headerLogo title {
+    align-items: center;
+}
+
+
+/* 
+ * NAVIGATION BAR STYLING 
+ */
+nav {
+    background-color: #fff2b3;
+    text-align: center;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.5);
+}
+nav ul {
+    margin: 0;
+    padding: 3px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppin', sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+nav ul li a::after {
+    content: '';
+    background: #0071aa;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+
+}
+nav ul li a:hover {
+    color: #fff;
+}
+nav ul li a:hover::after {
+    top: 50%;
+    opacity: 1;
+}
+nav.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    transition: padding 1s;
+}
+
+
+/* 
+ * TABLE STYLING 
+ */
+table {
+    display: flex;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    font-family: 'Poppin', sans-serif;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+td {
+    background-color: white;
+    font-family: 'Poppin', sans-serif;
+}
+th {
+    background-color: #fff2b3;
+}
+
+
+/* 
+ * BUTTON STYLING 
+ */
+.button {
+    border-radius: 50px;
+    color: #333;
+    padding: 15px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.online-booking-button {
+    background-color: #fff2b3;
+}
+.online-booking-button:hover {
+    background-color: #0071aa;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+
+/* 
+ * BODY STYLING 
+ */
+body {
+    background-color: #7fd4ff;
+    text-align: center;
+}
+h2 {
+    background-color: #fff2b3;
+    padding: 15px;
+    color: #333;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h3 {
+    background-color: #fff2b3;
+    color: #333;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+p {
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+.opening-times {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#opening-time-title {
+    font-weight: bold;
+}
+.opening-times p {
+    margin: 2px 0;
+}
+#memberFeeTableTitle {
+    text-align: center;
+    font-weight: bold;
+}
+/* IMAGE STYLING */ 
+.images {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+#serviceAreaImg {
+    max-width: 50%;
+}
+#sampleReceptionImg {
+    max-width: 50%;
+}
+
+
+/* 
+ * FOOTER STYLING 
+ */
+hr {
+    border: none;
+    height: 3px;
+    background-color: #fff2b3;
+    margin: 20px 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+footer p{
+    text-align: center;
+}
+
+
+/* 
+ * FORM STYLING 
+ */
+.bookingForm {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #333;
+    color: #333;
+    background-color: #fff2b3;
+}
+/* FORM ROW */
+.formGroup {
+    margin-bottom: 10px;
+    display: block;
+    padding-top: 15px;
+}
+/* FORM LABELS */
+.formGroup label {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+/* DROPDOWN */
+select {
+    min-width: 300px;
+}
+/* TEXT FIELDS */
+input[type="text"] {
+    min-width: 300px;
+}
+/* DATE FIELDS */
+input[type="date"] {
+    min-width: 300px;
+}
+/* SUBMIT BUTTON */
+.submit-button {
+    display: block;
+}
+/* COMMENT FIELD */
+#comment {
+    resize: none; /* Restricts resizing */
+}
+/* CHECKBOX PILLGROUP */
+.pill-group {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.pill {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    border: 2px solid #0071aa;
+    background-color: #00AAFF;
+    color: #ffd400;
+}
+.pill:hover {
+    background-color: #ffd400;
+    color: #0071aa;
+}
+input[type="checkbox"] {
+    display: none; /* Hides default checkbox button */
+}
+.pill.checked {
+    background-color: #ffd400;
+    color: #0071aa;
+}
+
+
+/* 
+ * Media query for smaller screens 
+ */
+@media (max-width: 728px) {
+    .bookingForm {
+        display: inline-block;
+    }
+    .bookingForm .formGroup label{
+        display: block;
+    }
+    .images {
+        max-width: 50;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+}

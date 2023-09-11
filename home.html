@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--HEAD-->
+    <title>Russel Street Medical</title>
+    <link rel="stylesheet" type = "text/css" href="styles.css">
+</head>
+<body>
+    <!--BODY-->
+    <div id="home"></div>
+<header>
+    <!--HEADER-->
+    <div class="headerLogo">
+        <img src="assets/images/headerLogo.png" alt="header logo" width="50" height="50" class="logoImage">
+    </div>
+    <div class="headerLogo">
+        <h1>Russel Street Medical</h1>
+    </div> 
+</header>
+
+<!--NAVIGATION MENU-->
+<nav id="navbar">
+    <ul id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#staff-profiles">Staff Profiles</a></li>
+        <li><a href="#service-area">Services Area</a></li>
+    </ul>
+</nav>
+
+<main>
+    <!-- MAIN-->    
+    <section id="about-us">
+
+        <!-- 
+        About Us: 
+        Describes the practice and lists their opening times (Mon - Sun: 9am -6pm).
+        There should be an image of a sample reception area or external location
+        -->
+
+        <h2>About Us</h2>
+        
+        <!-- Sample Reception Area Image -->
+        <img src="assets/images/sampleReceptionArea.jpg" alt="Image of Reception Area" style="border: 1px solid black" class="images" id="sampleReceptionImg"><br>
+
+        <p>
+            Russel Street Medical opened in 2020 and is located in Melbourne’s CBD 
+            at 427 Swanston Street Melbourne 3000, just opposite RMIT University 
+            Building 10 and within walking distance of Melbourne central station. <br><br>
+            We strive to help all our patients with a focus on preventative health 
+            care, a view to managing chronic health conditions with a holistic 
+            approach, and with access to a wide range of specialist care providers 
+            when needed. <br><br>
+        </p>
+
+        <!-- Opening Times -->
+        <div class="opening-times">
+            <p id="opening-time-title">Our Opening Times are: </p><br>
+            <p>Monday 9:00 AM - 6:00 PM</p><br>
+            <p>Tuesday 9:00 AM - 6:00 PM</p><br>
+            <p>Wednesday 9:00 AM - 6:00 PM</p><br>
+            <p>Thursday 9:00 AM - 6:00 PM</p><br>
+            <p>Friday 9:00 AM - 6:00 PM</p><br>
+            <p>Saturday 9:00 AM - 6:00 PM</p><br>
+            <p>Sunday 9:00 AM - 6:00 PM</p><br>
+        </div>
+
+        <p id="memberFeeTableTitle"><br>RMIT students and staff receive discounts through partnership programs.<br></p>
+        <!-- Price Discount Table -->
+        <table>
+            <tr>
+                <th>Consultation</th>
+                <th>Normal Fee</th>
+                <th>RMIT Member Fee</th>
+                <th>Medicare Rebate</th>
+            </tr>
+            <tr>
+                <td>Standard</td>
+                <td>$80.00</td>
+                <td>$60.00</td>
+                <td>$40.00</td>
+            </tr>
+            <tr>
+                <td>Long or Complex</td>
+                <td>$125.00</td>
+                <td>$95.00</td>
+                <td>$75.00</td>
+            </tr>
+        </table>
+
+    </section>
+
+    <section id="staff-profiles">
+
+        <!-- 
+        Who we are/Staff Profiles section:
+        Contains the profiles of two staff members.
+        Image and Brief description of each staff member and their position.
+        -->
+
+        <h2>Staff Profiles</h2>
+
+        <h3>Dr. Stephen Hill</h3>
+        <!-- Image Source: https://www.pexels.com/photo/a-man-wearing-a-stethoscope-on-his-neck-6234600/ -->
+        <img src="assets/images/DrStephenHill.jpg" alt="Image of Dr.Stepehen Hill" width="300" height="400" style="border: 1px solid black;" class="images" id="stephenImg">
+        <p>
+            Stephen Hill graduated from Auckland University in New Zealand in 2014 
+            and obtained his Fellowship from the Royal Australian College of General 
+            Practitioners in 2017. <br><br>
+            Over his training and practice, Stephen worked in internal medicine at 
+            the Royal Children's Hospital Melbourne before transitioning to General 
+            Practice.
+        </p>
+
+        <h3>Ms. Kiyoko Tsu</h3>
+        <!-- Image Source: https://www.pexels.com/photo/female-medical-practitioner-wearing-laboratory-coat-8442283/ -->
+        <img src="assets/images/MsKiyokoTsu.jpg" alt="Image of Ms.KiyokoTsu" width="300" height="400" style="border: 1px solid black;" class="images" id="kiyokoImg">
+        <p>
+            Kiyoko Tsu completed her Bachelor of Nursing at the Yong Loo Lin School 
+            of Medicine in Singapore in 2019. <br><br> 
+            She is an accredited Nurse Immunizer and has worked in various hospitals 
+            within metropolitan Melbourne.
+        </p>
+    </section>
+
+    <section id="service-area">
+
+        <!--
+        Service Area: 
+        Invites new patients to register with them in person
+        Reminds current patients that they can use the online booking system for vaccinations and blood tests.
+        -->
+
+        <h2>Service Area</h2>
+
+        <!-- Image for Service Area -->
+        <img src="assets/images/serviceArea.webp" alt = "Image of Service Area" style="border: 1px solid black" class="images" id="serviceAreaImg"><br>
+
+        <p>
+            Welcome to our clinic! Whether you're a new patient or a returning one, 
+            we're here to provide you with top-notch healthcare services. If you're 
+            a new patient, we invite you to register with us in person. Our friendly 
+            staff will be happy to assist you with the registration process and 
+            answer any questions you may have. For our current patients, we want to 
+            make things convenient for you. You can use our online booking system to 
+            schedule appointments for vaccinations and blood tests. This way, you can 
+            manage your healthcare needs with ease. At our clinic, your well-being is 
+            our top priority. We're dedicated to delivering the best care possible to 
+            you and your family. Feel free to reach out to us if you have any inquiries 
+            or if you'd like to schedule an appointment.
+        </p>
+
+        <!--Bookings Button-->
+        <button class="button online-booking-button" onclick="window.location.href='bookings.html'">Online Bookings</button>    
+    </section>
+</main>
+<footer>
+    <!--FOOTER-->
+    <div class="contact-info">
+        <hr> <!-- Horizontal Line to Separate Sections-->
+        <p>Contact us: <span class="phone-number">(123) 456-7890</span></p>
+        <p>Email: <span class="email">info@RusselStreetMedical.com.au</span></p>
+    </div>
+    <p>Mitchell Gerald Hughes (s3901335)</p>
+</footer> 
+<!-- IMPORT SCRIPT -->
+<script src="assets/scripts/homeScript.js"></script>
+</body>
+</html>
